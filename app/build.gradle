@@ -13,7 +13,7 @@ android {
   signingConfigs {
     rel { storeFile file("../release.jks"); storePassword "w2apass"; keyAlias "w2a"; keyPassword "w2apass" }
   }
-  buildTypes { release { minifyEnabled false; signingConfig signingConfigs.rel } }
+  buildTypes { release { minifyEnabled false; crunchPngs false; signingConfig signingConfigs.rel } }
   compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
   kotlinOptions { jvmTarget = "17" }
 }
